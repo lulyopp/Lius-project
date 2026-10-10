@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/HCI">
+        <file>path_total.csv</file>
+    </qresource>
+</RCC>

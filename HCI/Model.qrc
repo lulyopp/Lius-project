@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>dist_low.stl</file>
+        <file>mod1.stl</file>
+        <file>mod2.stl</file>
+        <file>mod3.stl</file>
+        <file>pro_low.stl</file>
+        <file>packages.config</file>
+    </qresource>
+</RCC>

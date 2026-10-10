@@ -1,0 +1,36 @@
+# Visual Studio user/cache files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output and intermediate files
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+x64/
+x86/
+ARM/
+ARM64/
+*.ilk
+*.pdb
+*.obj
+*.tlog
+*.lastbuildstate
+*.idb
+*.ipdb
+*.iobj
+*.pch
+
+# Qt generated files
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# User-local tooling files
+.idea/
+.vscode/
+*.log
+

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/STL">
+        <file>digu.stl</file>
+        <file>youqiagu.stl</file>
+        <file>zuoqiagu.stl</file>
+    </qresource>
+</RCC>

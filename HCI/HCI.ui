@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HCIClass</class>
+ <widget class="QWidget" name="HCIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2386</width>
+    <height>1174</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>9999999</width>
+    <height>9999999</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Adobe 宋体 Std L</family>
+    <pointsize>20</pointsize>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>骨折复位手术导航界面</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#HCIClass{background-color:rgb(128, 128, 128);}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="12,2,2">
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,20">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#label{
+	background-color: rgb(128, 129, 127);
+	color: rgb(255,255,255);
+}</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; color:#ffffff;&quot;&gt;骨折复位机器人手术导航&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="OpenGLWidget" name="openGLWidget">
+           <property name="styleSheet">
+            <string notr="true">#openGLWidget{border-radius:25px;}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,4">
+         <item>
+          <widget class="QLabel" name="Label">
+           <property name="font">
+            <font>
+             <family>Adobe Arabic</family>
+             <pointsize>18</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; color:#ffffff;&quot;&gt;偏差&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="Frame1">
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_15">
+              <property name="font">
+               <font>
+                <family>Adobe Arabic</family>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;前后移位Y_dis(mm)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_13">
+              <property name="font">
+               <font>
+                <family>Adobe Arabic</family>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;上下移位Z_dis(mm)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <family>Adobe Arabic</family>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;屈曲伸展X_angle(°)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="font">
+               <font>
+                <family>Adobe Arabic</family>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;内翻外翻&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Y_angle(°)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="font">
+               <font>
+                <family>Adobe Arabic</family>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;内旋外旋&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Z_angle(°)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="yDisEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{border-width:0;border-style:outset}
+QLineEdit{background-color:rgb(255,255,255);
+color:rgb(0, 0, 0);
+font:28pt &quot;Times New Roman&quot;;}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="zDisEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{border-width:0;border-style:outset}
+QLineEdit{background-color:rgb(255,255,255);
+color:rgb(0, 0, 0);
+font:28pt &quot;Times New Roman&quot;;}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_14">
+              <property name="font">
+               <font>
+                <family>Adobe Arabic</family>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+                <kerning>false</kerning>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="midLineWidth">
+               <number>0</number>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;内外移位X_dis(mm)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+              <property name="margin">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="xDisEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{border-width:0;border-style:outset}
+QLineEdit{background-color:rgb(255,255,255);
+color:rgb(0, 0, 0);
+font:28pt &quot;Times New Roman&quot;;}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLineEdit" name="xAngleEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{border-width:0;border-style:outset}
+QLineEdit{background-color:rgb(255,255,255);
+color:rgb(0, 0, 0);
+font:28pt &quot;Times New Roman&quot;;}</string>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLineEdit" name="yAngleEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{border-width:0;border-style:outset}
+QLineEdit{background-color:rgb(255,255,255);
+color:rgb(0, 0, 0);
+font:28pt &quot;Times New Roman&quot;;}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLineEdit" name="zAngleEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{border-width:0;border-style:outset}
+QLineEdit{background-color:rgb(255,255,255);
+color:rgb(0, 0, 0);
+font:28pt &quot;Times New Roman&quot;;}</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <property name="verticalSpacing">
+             <number>20</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="ProjectBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+                <underline>false</underline>
+                <kerning>true</kerning>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #3498db; /* 默认背景色：蓝色 */
+    color: white;              /* 文字颜色：白色 */
+    border-radius: 5px;        /* 圆角 */
+    border: none;              /* 取消默认边框 */
+    padding: 5px;              /* 内边距 */
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+QPushButton:hover {
+    background-color: #2980b9; /* 颜色略微加深 */
+}
+
+/* 3. 按钮按下状态（核心） */
+QPushButton:pressed {
+    background-color: #1f618d; /* 颜色变得更深 */
+    padding-top: 7px;          /* 增加顶部内边距 */
+    padding-left: 7px;         /* 增加左侧内边距 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>模型文件</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>50</width>
+                <height>50</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="PlanBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #3498db; /* 默认背景色：蓝色 */
+    color: white;              /* 文字颜色：白色 */
+    border-radius: 5px;        /* 圆角 */
+    border: none;              /* 取消默认边框 */
+    padding: 5px;              /* 内边距 */
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+QPushButton:hover {
+    background-color: #2980b9; /* 颜色略微加深 */
+}
+
+/* 3. 按钮按下状态（核心） */
+QPushButton:pressed {
+    background-color: #1f618d; /* 颜色变得更深 */
+    padding-top: 7px;          /* 增加顶部内边距 */
+    padding-left: 7px;         /* 增加左侧内边距 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>术前规划</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="ZhuceBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #3498db; /* 默认背景色：蓝色 */
+    color: white;              /* 文字颜色：白色 */
+    border-radius: 5px;        /* 圆角 */
+    border: none;              /* 取消默认边框 */
+    padding: 5px;              /* 内边距 */
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+QPushButton:hover {
+    background-color: #2980b9; /* 颜色略微加深 */
+}
+
+/* 3. 按钮按下状态（核心） */
+QPushButton:pressed {
+    background-color: #1f618d; /* 颜色变得更深 */
+    padding-top: 7px;          /* 增加顶部内边距 */
+    padding-left: 7px;         /* 增加左侧内边距 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>注册</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="PeizhunBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #3498db; /* 默认背景色：蓝色 */
+    color: white;              /* 文字颜色：白色 */
+    border-radius: 5px;        /* 圆角 */
+    border: none;              /* 取消默认边框 */
+    padding: 5px;              /* 内边距 */
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+QPushButton:hover {
+    background-color: #2980b9; /* 颜色略微加深 */
+}
+
+/* 3. 按钮按下状态（核心） */
+QPushButton:pressed {
+    background-color: #1f618d; /* 颜色变得更深 */
+    padding-top: 7px;          /* 增加顶部内边距 */
+    padding-left: 7px;         /* 增加左侧内边距 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>配准</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="SecPlanBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>28</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #3498db; /* 默认背景色：蓝色 */
+    color: white;              /* 文字颜色：白色 */
+    border-radius: 5px;        /* 圆角 */
+    border: none;              /* 取消默认边框 */
+    padding: 5px;              /* 内边距 */
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+QPushButton:hover {
+    background-color: #2980b9; /* 颜色略微加深 */
+}
+
+/* 3. 按钮按下状态（核心） */
+QPushButton:pressed {
+    background-color: #1f618d; /* 颜色变得更深 */
+    padding-top: 7px;          /* 增加顶部内边距 */
+    padding-left: 7px;         /* 增加左侧内边距 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>二次规划</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="NaviBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #3498db; /* 默认背景色：蓝色 */
+    color: white;              /* 文字颜色：白色 */
+    border-radius: 5px;        /* 圆角 */
+    border: none;              /* 取消默认边框 */
+    padding: 5px;              /* 内边距 */
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+QPushButton:hover {
+    background-color: #2980b9; /* 颜色略微加深 */
+}
+
+/* 3. 按钮按下状态（核心） */
+QPushButton:pressed {
+    background-color: #1f618d; /* 颜色变得更深 */
+    padding-top: 7px;          /* 增加顶部内边距 */
+    padding-left: 7px;         /* 增加左侧内边距 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>导航</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="Frame2">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#Frame2{background-color:rgb(128, 128, 128);
+border-radius:20px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,4,6">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>11</number>
+         </property>
+         <property name="topMargin">
+          <number>11</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>148</width>
+             <height>148</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>148</width>
+             <height>148</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+             <pointsize>28</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: red;
+    border-radius: 70px;
+    min-width: 140px;
+    min-height: 140px;
+    max-width: 140px;
+    max-height: 140px;
+    border: 4px solid darkred;
+}
+
+QPushButton:hover {
+    background-color: #ff3333;
+}
+
+QPushButton:pressed {
+    background-color: #cc0000;
+}
+font-weight: 800;</string>
+           </property>
+           <property name="text">
+            <string>急停</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="part02" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QPushButton" name="StartBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: rgb(0, 124, 124);
+    font: 28pt &quot;Adobe 黑体 Std R&quot;;
+    border: 2px solid rgb(0, 80, 80);
+    color: rgb(255, 255, 255);
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+QPushButton:hover {
+    background-color: rgb(0, 145, 145); /* 颜色稍微变亮，提示可点击 */
+}
+
+/* 3. 按钮按下状态（点击效果） */
+QPushButton:pressed {
+    background-color: rgb(0, 90, 90);   /* 背景颜色变深 */
+    border: 2px solid rgb(0, 50, 50);   /* 边框颜色变深 */
+    padding-top: 3px;                   /* 文字向下微移 */
+    padding-left: 3px;                  /* 文字向右微移，产生物理按压的凹陷感 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>开始</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="StopBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: rgb(0, 124, 124);
+    font: 28pt &quot;Adobe 黑体 Std R&quot;;
+    border: 2px solid rgb(0, 80, 80);
+    color: rgb(255, 255, 255);
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+QPushButton:hover {
+    background-color: rgb(0, 145, 145); /* 颜色稍微变亮，提示可点击 */
+}
+
+/* 3. 按钮按下状态（点击效果） */
+QPushButton:pressed {
+    background-color: rgb(0, 90, 90);   /* 背景颜色变深 */
+    border: 2px solid rgb(0, 50, 50);   /* 边框颜色变深 */
+    padding-top: 3px;                   /* 文字向下微移 */
+    padding-left: 3px;                  /* 文字向右微移，产生物理按压的凹陷感 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>停止</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="DoneBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>28</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: rgb(0, 124, 124);
+    font: 28pt &quot;Adobe 黑体 Std R&quot;;
+    border: 2px solid rgb(0, 80, 80);
+    color: rgb(255, 255, 255);
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+QPushButton:hover {
+    background-color: rgb(0, 145, 145); /* 颜色稍微变亮，提示可点击 */
+}
+
+/* 3. 按钮按下状态（点击效果） */
+QPushButton:pressed {
+    background-color: rgb(0, 90, 90);   /* 背景颜色变深 */
+    border: 2px solid rgb(0, 50, 50);   /* 边框颜色变深 */
+    padding-top: 3px;                   /* 文字向下微移 */
+    padding-left: 3px;                  /* 文字向右微移，产生物理按压的凹陷感 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>完成</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="Part03" native="true">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QPushButton" name="AutoBtn">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>220</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>220</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Adobe 黑体 Std R</family>
+                <pointsize>18</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#AutoBtn {
+    background-color: rgb(0, 124, 124);
+    font: 18pt &quot;Adobe 黑体 Std R&quot;;
+    border: 2px solid rgb(0, 80, 80);
+    color: rgb(255, 255, 255);
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+#AutoBtn:hover {
+    background-color: rgb(0, 145, 145); /* 颜色稍微变亮，提示可点击 */
+}
+
+/* 3. 按钮按下状态（点击效果） */
+#AutoBtn:pressed {
+    background-color: rgb(0, 90, 90);   /* 背景颜色变深 */
+    border: 2px solid rgb(0, 50, 50);   /* 边框颜色变深 */
+    padding-top: 3px;                   /* 文字向下微移 */
+    padding-left: 3px;                  /* 文字向右微移，产生物理按压的凹陷感 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string notr="true">自主模式</string>
+              </property>
+              <property name="icon">
+               <iconset resource="Photo.qrc">
+                <normaloff>:/工业自动化.png</normaloff>:/工业自动化.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>90</width>
+                <height>90</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="ArtBtn">
+              <property name="minimumSize">
+               <size>
+                <width>220</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>220</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#ArtBtn {
+    background-color: rgb(0, 124, 124);
+    font: 18pt &quot;Adobe 黑体 Std R&quot;;
+    border: 2px solid rgb(0, 80, 80);
+    color: rgb(255, 255, 255);
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+#ArtBtn:hover {
+    background-color: rgb(0, 145, 145); /* 颜色稍微变亮，提示可点击 */
+}
+
+/* 3. 按钮按下状态（点击效果） */
+#ArtBtn:pressed {
+    background-color: rgb(0, 90, 90);   /* 背景颜色变深 */
+    border: 2px solid rgb(0, 50, 50);   /* 边框颜色变深 */
+    padding-top: 3px;                   /* 文字向下微移 */
+    padding-left: 3px;                  /* 文字向右微移，产生物理按压的凹陷感 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string notr="true">主从模式</string>
+              </property>
+              <property name="icon">
+               <iconset resource="Photo.qrc">
+                <normaloff>:/医生.png</normaloff>:/医生.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>90</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="autoRepeat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="JogBtn">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>220</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>220</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#JogBtn {
+    background-color: rgb(0, 124, 124);
+    font: 18pt &quot;Adobe 黑体 Std R&quot;;
+    border: 2px solid rgb(0, 80, 80);
+    color: rgb(255, 255, 255);
+}
+
+/* 2. 鼠标悬停状态（鼠标移上去但没按下） */
+#JogBtn:hover {
+    background-color: rgb(0, 145, 145); /* 颜色稍微变亮，提示可点击 */
+}
+
+/* 3. 按钮按下状态（点击效果） */
+#JogBtn:pressed {
+    background-color: rgb(0, 90, 90);   /* 背景颜色变深 */
+    border: 2px solid rgb(0, 50, 50);   /* 边框颜色变深 */
+    padding-top: 3px;                   /* 文字向下微移 */
+    padding-left: 3px;                  /* 文字向右微移，产生物理按压的凹陷感 */
+}
+</string>
+              </property>
+              <property name="text">
+               <string notr="true">点动模式</string>
+              </property>
+              <property name="icon">
+               <iconset resource="Photo.qrc">
+                <normaloff>:/手2.png</normaloff>:/手2.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>90</width>
+                <height>90</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>OpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>openglwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="HCI.qrc"/>
+  <include location="Photo.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>on_PlanBtn_clicked()</slot>
+ </slots>
+</ui>

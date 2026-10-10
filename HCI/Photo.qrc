@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>手.png</file>
+        <file>手2.png</file>
+        <file>医生.png</file>
+        <file>工业自动化.png</file>
+        <file>功能建议.png</file>
+    </qresource>
+</RCC>
