@@ -1,0 +1,12 @@
+# Qt Creator local configuration
+*.pro.user
+
+# Build output
+debug/
+release/
+*.o
+*.obj
+*.moc
+*.rcc
+*.gch
+
